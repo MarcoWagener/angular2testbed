@@ -1,3 +1,4 @@
-<p>
-  {{welcomeMessage}}
-</p>
+<div *ngIf="userService.user.isLoggedIn">Welcome, {{userService.user.name}}</div>
+<div *ngIf="!userService.user.isLoggedIn">Please log in.</div>
+
+<p>Person name: {{personName}}</p>

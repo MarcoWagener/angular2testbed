@@ -5,6 +5,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 import { UserService } from './services/user.service';
+import { PersonService } from './services/person.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -15,7 +16,8 @@ describe('AppComponent', () => {
         WelcomeComponent
       ],
       providers: [
-        UserService
+        UserService,
+        PersonService
       ]
     }).compileComponents();
   }));

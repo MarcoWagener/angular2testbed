@@ -13,7 +13,7 @@ describe('UserService', () => {
     expect(service).toBeTruthy();
   }));
 
-  it('should have a property of type User', () => {
-  	//to implement...
-  });
+  it('should have a property of type User', inject([UserService], (service: UserService) => {
+  	expect(service.user).toBeTruthy();
+  }));
 });

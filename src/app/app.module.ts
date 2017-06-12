@@ -6,6 +6,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
 import { UserService } from './services/user.service';
+import { PersonService } from './services/person.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,10 @@ import { UserService } from './services/user.service';
   imports: [
     BrowserModule
   ],
-  providers: [ UserService ],
+  providers: [
+    UserService,
+    PersonService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

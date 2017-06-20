@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 
-import { UserService } from './services/user.service';
-import { PersonService } from './services/person.service';
+import { UserService } from './services/user/user.service';
+import { PersonService } from './services/person/person.service';
+import { WikipediaService } from './services/wikipedia/wikipedia.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PersonService } from './services/person.service';
   ],
   providers: [
     UserService,
-    PersonService
+    PersonService,
+    WikipediaService
   ],
   bootstrap: [AppComponent]
 })

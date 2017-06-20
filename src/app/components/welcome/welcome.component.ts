@@ -2,8 +2,8 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 import { Observable } from 'rxjs/Observable';
 
-import { UserService } from '../../services/user.service';
-import { PersonService } from '../../services/person.service';
+import { UserService } from '../../services/user/user.service';
+import { PersonService } from '../../services/person/person.service';
 
 @Component({
   selector: 'app-welcome',

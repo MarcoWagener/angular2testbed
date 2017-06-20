@@ -2,8 +2,8 @@ import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core
 import { DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
 
-import { UserService } from '../../services/user.service';
-import { PersonService } from '../../services/person.service';
+import { UserService } from '../../services/user/user.service';
+import { PersonService } from '../../services/person/person.service';
 
 import { WelcomeComponent } from './welcome.component';
 

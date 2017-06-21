@@ -3,6 +3,7 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { WikipediaComponent } from './components/welcome/welcome.component';
 
 import { UserService } from './services/user/user.service';
 import { PersonService } from './services/person/person.service';
@@ -14,7 +15,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         BannerComponent,
-        WelcomeComponent
+        WelcomeComponent,
+        WikipediaComponent
       ],
       providers: [
         UserService,

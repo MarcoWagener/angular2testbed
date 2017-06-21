@@ -33,8 +33,12 @@ describe('WikipediaComponent', () => {
     expect(fixture.debugElement.injector.get(WikipediaService)).toBeTruthy();
   });
 
-  //Do's
   it('should display a text box for searching against wikipedia', () => {
+
+  });
+
+  //Do's
+  it('should display a list of "Marco" results', () => {
 
   });
 });

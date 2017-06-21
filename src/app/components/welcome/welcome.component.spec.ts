@@ -47,6 +47,15 @@ describe('WelcomeComponent', () => {
     fixture.detectChanges();
   });
 
+  //Have's
+  it('should have a user service instance', () => {
+    expect(fixture.debugElement.injector.get(UserService)).toBeTruthy();
+  });
+
+  it('should have a user service instance', () => {
+    expect(fixture.debugElement.injector.get(PersonService)).toBeTruthy();
+  });  
+
   //Do's
   it('should be created', () => {
     expect(component).toBeTruthy();
